@@ -1,5 +1,5 @@
 {
-  "name": "No Squirrels Social Network API",
+  "name": "squirrels-social-network",
   "version": "1.0.1",
   "description": "NoSQL and Mongoose back-end project",
   "main": "index.js",
@@ -11,6 +11,7 @@
     "heroku-postbuild": "node utils/seed.js"
   },
   "dependencies": {
+    "express": "^4.18.2",
     "mongoose": "^6.9.2"
   },
   "devDependencies": {
