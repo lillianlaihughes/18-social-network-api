@@ -4,6 +4,13 @@
 
 Our challenge for this module was to build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. The goal of this assignment was to further our understanding of how to build and structure APIs so we can handle data for applications effectively. We used Express.js for routing, a MongoDB database, and the Mongoose ODM.
 
+## Table of Contents
+-[User Story](#user-story)
+-[Acceptance Criteria](#acceptance-criteria)
+-[Video](#video)
+-[Usage](#usage)
+-[Resources](#resources)
+
 ## User Story
 
 ```md
@@ -26,12 +33,16 @@ WHEN I test API POST and DELETE routes in Insomnia
 THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
 ```
 
-## Guidelines for using API routes:
+## Video
+https://watch.screencastify.com/v/VpiwaOXFfKzztp9GgIbM
+
+## Usage
+Guidelines for using API routes:
 
 - `/api/users`
   - `GET` all users
   - `GET` a single user by its `_id`
-  - `POST` a new user (See example data for new user)
+  - `POST` a new user
   - `PUT` to update a user by its `_id`
   - `DELETE` to remove a user by its `_id`
 - `/api/users/:userId/friends/:friendId`
@@ -40,7 +51,7 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 - `/api/thoughts`
   - `GET` to get all thoughts
   - `GET` to get a single thought by its `_id`
-  - `POST` to create a new thought (See example data for new thought)
+  - `POST` to create a new thought
   - `PUT` to update a thought by its `_id`
   - `DELETE` to remove a thought by its `_id`
 - `/api/thoughts/:thoughtId/reactions`
