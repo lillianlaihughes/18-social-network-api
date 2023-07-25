@@ -4,12 +4,6 @@
 
 Our challenge for this module was to build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. The goal of this assignment was to further our understanding of how to build and structure APIs so we can handle data for applications effectively. We used Express.js for routing, a MongoDB database, and the Mongoose ODM.
 
-## Table of Contents
-
-- [](#api-routes)
--
--
-
 ## User Story
 
 ```md
