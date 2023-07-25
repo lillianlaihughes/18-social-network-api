@@ -4,14 +4,17 @@ const {
   getSingleUser,
   createUser,
   deleteUser,
-  addThought,
-  removeThought,
 } = require('../../controllers/userController.js');
+
+const {
+  createThought,
+  deleteThought,
+} = require('../../controllers/thoughtController.js');
 
 // /api/users --> `GET` all users
 router.route('/').get(getUsers).post(createUser);
 
-// /api/users/:userId --> `GET` a single user by its `_id` 
+// /api/users/:userId --> `GET` a single user by its `_id`
 // STILL NEED TODO: and populated thought and friend data
 router.route('/:userId').get(getSingleUser).delete(deleteUser);
 
@@ -26,9 +29,9 @@ router.route('/:userId').get(getSingleUser).delete(deleteUser);
 // - `DELETE` to remove a friend from a user's friend list
 
 // /api/users/:userId/thoughts
-router.route('/:userId/thoughts').post(addThought);
+router.route('/:userId/thoughts').post(createThought);
 
 // /api/users/:userId/thoughts/:thoughtId
-router.route('/:userId/thoughts/:thoughtId').delete(removeThought);
+router.route('/:userId/thoughts/:thoughtId').delete(deleteThought);
 
 module.exports = router;
